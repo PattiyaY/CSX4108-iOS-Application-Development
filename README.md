@@ -12,7 +12,7 @@ Which might be useful for beginner or expert who aims to revise basic swift know
 - In this class students got to interact with simple declarations such as implicit and explicit types including proper use of view controller.
 - using logic and problem solving skills. <br />
   - [Class 01 Basic Swift](https://github.com/PattiyaY/CSX4108-iOS-Application-Development/tree/main/BasicSwift.playground) <br />
-    **Assignment**
+- **Assignment**
   - [Class 01 oceanLifeAnimals](https://github.com/PattiyaY/CSX4108-iOS-Application-Development/tree/main/oceanLifeAnimals)
   - [Class 01 simpleFormInput](https://github.com/PattiyaY/CSX4108-iOS-Application-Development/tree/main/simpleFormInput)
 
@@ -31,7 +31,7 @@ Which might be useful for beginner or expert who aims to revise basic swift know
 
 - In this class students learning how to handle with optional type properly and more secure.
   - [Class 03 Optional Type Demo](https://github.com/PattiyaY/CSX4108-iOS-Application-Development/tree/main/Optional%20Type%20Demo.playground) <br />
-    **Assignment**
+- **Assignment**
   - [Class 03 Square Views](https://github.com/PattiyaY/CSX4108-iOS-Application-Development/tree/main/Class03-Layout)
 
 # Week 4
@@ -42,10 +42,10 @@ Which might be useful for beginner or expert who aims to revise basic swift know
 - In this class, studying the different stages a view controller goes through from its creation to its destruction. This includes stages like loading the view, appearing on the screen, and disappearing from the screen.
 - learn how to set up a UITextField, handle text changes, and implement basic delegate methods.
 - also learn how to create Tabbar.
-  - [Class 04 TextField Events]()
-  - [Class 04 Tabbar Demo]()
-  - [Class 04 View Controller Life Cycle]() <br />
-    **Exercise**
-  - [Class 04 TextField Thai Citizen Id]() <br />
-    **Assignment**
+  - [Class 04 TextField Events](https://github.com/PattiyaY/CSX4108-iOS-Application-Development/tree/main/TextField%20Events)
+  - [Class 04 Tabbar Demo](https://github.com/PattiyaY/CSX4108-iOS-Application-Development/tree/main/Tabbar%20Demo)
+  - [Class 04 View Controller Life Cycle](https://github.com/PattiyaY/CSX4108-iOS-Application-Development/tree/main/ViewController%20Life%20Cycle) <br />
+- **Exercise**
+  - [Class 04 TextField Thai Citizen Id](https://github.com/PattiyaY/CSX4108-iOS-Application-Development/tree/main/TextField%20Thai%20citizen%20id) <br />
+- **Assignment**
   - [Class 04 Vowels Counter]()

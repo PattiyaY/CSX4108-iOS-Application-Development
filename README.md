@@ -49,3 +49,4 @@ Which might be useful for beginner or expert who aims to revise basic swift know
   - [Class 04 TextField Thai Citizen Id](https://github.com/PattiyaY/CSX4108-iOS-Application-Development/tree/main/TextField%20Thai%20citizen%20id) <br />
 - **Assignment**
   - [Class 04 Vowels Counter]()
+    - Count Occurrences of a Character in a Swift String -> [Mango Umbrella](https://mangoumbrella.com/snippets/1/swift-how-to-count-occurrences-of-a-character-in-a-swift-string)

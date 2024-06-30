@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var wordInput: UITextField!
     @IBOutlet weak var textFieldA: UITextField!
     @IBOutlet weak var textFieldE: UITextField!
@@ -25,60 +25,57 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    func updateUI(for count: Int, bgView: UIView, textField: UITextField) {
+        if count >= 1 {
+            bgView.backgroundColor = .green
+            textField.text = "x\(count)"
+        } else {
+            bgView.backgroundColor = .gray
+            textField.text = "x\(count)"
+        }
+    }
     
     @IBAction func editingChangedTextField(_ sender: Any) {
-        if let currentWord = wordInput.text {
+        if let currentWord = wordInput.text, let lastChar = currentWord.last, !currentWord.isEmpty{
+            var countA = currentWord.filter { $0 == "a" || $0 == "A" }.count
+            var countE = currentWord.filter { $0 == "e" || $0 == "E" }.count
+            var countI = currentWord.filter { $0 == "i" || $0 == "I" }.count
+            var countO = currentWord.filter { $0 == "o" || $0 == "O" }.count
+            var countU = currentWord.filter { $0 == "u" || $0 == "U" }.count
+            print(lastChar)
             
-            let a = currentWord.filter({ $0 == "a" || $0 == "A" }).count
-            let e = currentWord.filter({ $0 == "e" || $0 == "E" }).count
-            let i = currentWord.filter({ $0 == "i" || $0 == "I" }).count
-            let o = currentWord.filter({ $0 == "o" || $0 == "O" }).count
-            let u = currentWord.filter({ $0 == "u" || $0 == "U" }).count
-            
-            if a >= 1 {
-                bgA.backgroundColor = .green
-                textFieldA.text = "x\(a)"
-            } else {
-                bgA.backgroundColor = .gray
-                textFieldA.text = "x\(a)"
-            }
-                
-            if e >= 1 {
-                bgE.backgroundColor = .green
-                textFieldE.text = "x\(e)"
-            } else {
-                bgE.backgroundColor = .gray
-                textFieldE.text = "x\(e)"
-            }
-                
-            if i >= 1 {
-                bgI.backgroundColor = .green
-                textFieldI.text = "x\(i)"
-            } else {
-                bgI.backgroundColor = .gray
-                textFieldI.text = "x\(i)"
-            }
-            
-            if o >= 1 {
-                bgO.backgroundColor = .green
-                textFieldO.text = "x\(o)"
-            } else {
-                bgO.backgroundColor = .gray
-                textFieldO.text = "x\(o)"
-            }
-           
-            if u >= 1 {
-                bgU.backgroundColor = .green
-                textFieldU.text = "x\(u)"
-            } else {
-                bgU.backgroundColor = .gray
-                textFieldU.text = "x\(u)"
+            switch lastChar {
+            case "a", "A":
+                countA = currentWord.filter { $0 == "a" || $0 == "A" }.count
+            case "e", "E":
+                countE = currentWord.filter({ $0 == "e" || $0 == "E" }).count
+            case "i", "I":
+                countI = currentWord.filter({ $0 == "i" || $0 == "I" }).count
+            case "o", "O":
+                countO = currentWord.filter({ $0 == "o" || $0 == "O" }).count
+            case "u", "U":
+                countU = currentWord.filter({ $0 == "u" || $0 == "U" }).count
+            default:
+               break
             }
 
+            updateUI(for: countA, bgView: bgA, textField: textFieldA)
+            updateUI(for: countE, bgView: bgE, textField: textFieldE)
+            updateUI(for: countI, bgView: bgI, textField: textFieldI)
+            updateUI(for: countO, bgView: bgO, textField: textFieldO)
+            updateUI(for: countU, bgView: bgU, textField: textFieldU)
+        } else {
+            
+            updateUI(for: 0, bgView: bgA, textField: textFieldA)
+            updateUI(for: 0, bgView: bgE, textField: textFieldE)
+            updateUI(for: 0, bgView: bgI, textField: textFieldI)
+            updateUI(for: 0, bgView: bgO, textField: textFieldO)
+            updateUI(for: 0, bgView: bgU, textField: textFieldU)
         }
         
     }
+    
     
 }
 
